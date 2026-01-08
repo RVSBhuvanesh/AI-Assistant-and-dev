@@ -1,13 +1,19 @@
-
 import streamlit as st
 
 from features.doc_generator import generate_documentation
 from features.readme_generator import generate_readme
 from features.code_explainer import explain_code
 
-st.set_page_config(page_title="AI Assistant for Students & Developers", layout="wide")
+st.set_page_config(
+    page_title="AI Assistant for Students & Developers",
+    layout="wide"
+)
 
+# --- Header UI ---
 st.title("🤖 AI Assistant for Students & Developers")
+st.caption("🚀 Built with Python, Streamlit & Google Gemini")
+st.divider()
+
 st.write("Powered by Google Gemini")
 
 tool = st.selectbox(
@@ -21,9 +27,10 @@ tool = st.selectbox(
 
 st.divider()
 
+# --- Tool Logic ---
 if tool in ["Documentation Generator", "README Generator"]:
     project_name = st.text_input("Project Name")
-    description = st.text_area("Project Description")
+    description = st.text_area("Project Description", height=200)
 
     if st.button("Generate"):
         if project_name and description:
@@ -39,7 +46,7 @@ if tool in ["Documentation Generator", "README Generator"]:
             st.warning("Please fill all fields")
 
 elif tool == "Code Explainer":
-    code = st.text_area("Paste your code here")
+    code = st.text_area("Paste your code here", height=250)
 
     if st.button("Explain Code"):
         if code.strip():
@@ -50,3 +57,4 @@ elif tool == "Code Explainer":
             st.markdown(result)
         else:
             st.warning("Please paste some code")
+            
