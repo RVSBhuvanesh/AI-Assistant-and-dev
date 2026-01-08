@@ -81,8 +81,4 @@ Authentication system
 
 Bhuvanesh Rampilla
 ECE Undergraduate | Aspiring Software Developer
-Interested in AI, Python, and Full-Stack Development
-
-⭐ If you find this project useful
-
-Please give it a star ⭐ on GitHub!
+Interested in AI, Python
