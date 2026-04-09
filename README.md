@@ -96,7 +96,7 @@ Authentication system
 👨‍💻 Author
 
 Bhuvanesh Rampilla
-ECE Undergraduate | Aspiring Software Developer
-Interested in AI, Python, and Full-Stack Development
+ECE Undergraduate | Aspiring AI & Data Science Engineer
+Focused on building real-world AI applications using Python and LLMs
 
 ⭐ If you find this project useful
