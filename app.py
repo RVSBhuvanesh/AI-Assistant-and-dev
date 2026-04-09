@@ -21,7 +21,8 @@ tool = st.selectbox(
     [
         "Documentation Generator",
         "README Generator",
-        "Code Explainer"
+        "Code Explainer",
+        "Code Debugger"
     ]
 )
 
@@ -58,3 +59,16 @@ elif tool == "Code Explainer":
         else:
             st.warning("Please paste some code")
             
+elif tool == "Code Debugger":
+    code = st.text_area("Paste your code here", height=250)
+
+    if st.button("Debug Code"):
+        if code.strip():
+            with st.spinner("Debugging code..."):
+                from features.code_debugger import debug_code
+                result = debug_code(code)
+
+            st.subheader("Debug Analysis")
+            st.markdown(result)
+        else:
+            st.warning("Please paste some code")

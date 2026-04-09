@@ -1,36 +1,52 @@
-🤖 AI Assistant for Students & Developers
+# 🤖 AI Assistant for Students & Developers
 
-A Python-based AI web application that helps students and developers generate project documentation, GitHub README files, and understand code using Google Gemini.
-Built with Python, Streamlit, and Generative AI, this tool aims to improve productivity and learning efficiency.
+An AI-powered web application built using Python and Google Gemini API that helps students and developers generate documentation, create README files, explain code, and debug programs using LLM-based prompt engineering.
 
-🚀 Features
+This project demonstrates practical implementation of Generative AI, API integration, and real-world developer productivity tools.
 
-📄 Documentation Generator
-Automatically generates structured academic or project documentation.
+---
 
-📘 README Generator
-Creates professional, Markdown-formatted GitHub README files.
+## 🚀 Features
 
-💡 Code Explainer
-Explains pasted code in simple, beginner-friendly language.
+### 📄 Documentation Generator
+Generates structured project or academic documentation based on user input.
 
-🌐 Single Web Interface
-All features are available through one clean Streamlit UI.
+### 📘 README Generator
+Creates professional and well-formatted GitHub README files in Markdown.
 
-🛠️ Tech Stack
+### 💡 Code Explainer
+Explains code step-by-step in a beginner-friendly manner.
 
-Programming Language: Python
+### 🛠 Code Debugger (NEW 🔥)
+Analyzes code, identifies errors, explains issues, and provides corrected code using LLM-based prompt design.
 
-AI Model: Google Gemini (Generative AI API)
+### 🌐 Unified Web Interface
+All tools are integrated into a single interactive Streamlit application.
 
-Frontend: Streamlit
+---
 
-Version Control: Git & GitHub
+## 🧠 Key Concepts Used
 
-⚙️ Installation & Setup
+- Prompt Engineering for different use cases (documentation, explanation, debugging)
+- Generative AI (Google Gemini API)
+- API Integration with Python
+- Modular project structure
+- Real-time AI interaction via Streamlit
 
-Clone the repository:
+---
 
+## 🛠️ Tech Stack
+
+- **Programming Language:** Python  
+- **AI Model:** Google Gemini API  
+- **Frontend:** Streamlit  
+- **Version Control:** Git & GitHub  
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
 git clone https://github.com/your-username/ai-assistant-dev.git
 cd ai-assistant-dev
 
@@ -81,4 +97,6 @@ Authentication system
 
 Bhuvanesh Rampilla
 ECE Undergraduate | Aspiring Software Developer
-Interested in AI, Python
+Interested in AI, Python, and Full-Stack Development
+
+⭐ If you find this project useful
